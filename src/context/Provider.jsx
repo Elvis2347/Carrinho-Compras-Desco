@@ -6,7 +6,7 @@ import propTypes from 'prop-types';
 function Provider ({children}) {
 
     const[produtos, setProdutos] = useState([]);
-    const[cartItems, setCartItems] = useState(["jgc", "klx"]);
+    const[cartItems, setCartItems] = useState([]);
     const [loading, setLoading] = useState(true);
     const [isCartVisible, setIsCartVisible] = useState(false);
 

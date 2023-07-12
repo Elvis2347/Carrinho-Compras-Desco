@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import propTypes from 'prop-types';
 import { BsCartCheck } from "react-icons/bs";
 
@@ -9,9 +9,9 @@ import AppContext from '../../context/AppContext';
 function ProdutoCard({ data }) {
 
     const {title, thumbnail, price} = data;
-    const {cartItems, setCartItem} = useState(AppContext);
+    const {cartItems, setCartItems} = useContext(AppContext);
 
-    const handleAddCart = () => setCartItem([...cartItems, data]);
+    const handleAddCart = () => setCartItems([...cartItems, data]);
 
     return(
         <section className="produto-card">

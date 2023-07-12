@@ -13,7 +13,7 @@ function CartButton() {
         onClick={ () => setIsCartVisible(!isCartVisible)}
         >
             <BsCart4 />
-            {cartItems.length > 0 && <spam className="cart-status">{cartItems.length}</spam>}
+            {cartItems.length > 0 && <span className="cart-status">{cartItems.length}</span>}
             
         </button>
     );
