@@ -14,7 +14,7 @@ function Produtos() {
             setProdutos(response);
             setLoading(false);
         });
-    },);
+    },[]);
 
     return(
         (loading && <Loading /> ) || (

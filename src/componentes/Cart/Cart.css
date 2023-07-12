@@ -31,4 +31,6 @@
 
 .cart-active {
     transform: translate(0,0);
+    display: flex;
+    flex-direction: column;
 }
